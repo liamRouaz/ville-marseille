@@ -1,0 +1,215 @@
+
+
+/** Styles pour les sous-menus **/
+.menu ul.sousmenu {
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    background: #0099CC;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+.menu ul.sousmenu li {
+    display: block;
+    width: 100%;
+}
+.menu ul.sousmenu a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.menu li:hover ul.sousmenu {
+    display: block;
+}
+
+/** Media query pour les écrans de largeur maximale de 800px **/
+@media screen and (max-width: 800px) {
+    .menu {
+        position: relative;
+    }
+    .menu ul {
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none;
+    }
+    .menu ul.sousmenu {
+        width: 100%;
+        position: static;
+    }
+    .menu ul.sousmenu a {
+        padding-left: 30px;
+    }
+    .menu li {
+        display: block;
+        float: none;
+        width: auto;
+    }
+    .menu input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 4;
+    }
+    .menu input:checked ~ ul {
+        display: block;
+    }
+}
+/***********************page histoire**************************/
+.animationtitre{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px 0;
+}
+
+.titre{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Patrick Hand', cursive;
+    color: transparent;
+	text-align: center;
+}
+
+.titre span{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: clamp(20px, 8vw, 120px);
+}
+
+.titre span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-100%);
+}
+
+.titre:nth-child(1){
+    font-weight: 300px;
+    animation: txt-appearance 0s 1s forwards;
+}
+
+.titre:nth-child(2){
+    font-weight: 300px;
+    animation: txt-appearance 0s 1s forwards;
+}
+
+#second-title::after{
+    background-color: white;
+    animation: slide-in 0.75s ease-out forwards, slide-out 0.75s 1s ease-out forwards;
+}
+
+#main-title::after{
+    background: white;
+    animation: slide-in 0.75s 0.3s ease-out forwards, slide-out 0.75s 1.3s ease-out forwards;
+}
+
+@keyframes slide-in{
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out{
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes txt-appearance{
+    100%{
+        color: white;
+		text-align: center;
+    }
+}
+/**h1{
+    text-align: center;
+    margin: 50px 0;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 100px;
+    color: #0099CC;
+}**/
+.partie{
+    border: 3px;
+    border-radius: 20px;
+    margin: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    text-align: justify;
+    font-family: 'Patrick Hand', cursive;
+    font-size: larger;
+    overflow: hidden;   
+    padding-bottom: 0; 
+    
+}
+
+.description p {
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.intro{
+    font-family: 'Patrick Hand', cursive;  
+    font-size: x-large;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.description h3{
+    text-align: center;
+	margin-top: 30px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagesaintjean img{
+    width: 600px;
+    height: 600px;
+}
+
+.imagelamajor img{
+    width: 600px;
+    height: 710px;
+    margin-bottom: 0;
+}
+
+.imagechateauif img{
+    width: 700px;
+    height: 500px;
+}
+
+.imagesaintjean{
+    display: flex;
+    justify-content: stretch;
+}
+
+.imagelamajor{
+    display: flex;
+    justify-content: stretch;
+}
+
+.imagechateauif{
+    display: flex;
+    justify-content: stretch;
+}
+
+@media screen and (max-width: 1){
+    
+}
+
+footer{
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+}
