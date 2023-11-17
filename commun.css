@@ -1,0 +1,123 @@
+/**** Réinitialisation des marges pour tous les éléments ****/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***Styles généraux du corps de la page *****/
+body {
+    background-color: #0099CC;
+}
+
+/***** Styles du menu principal ****/
+
+.menu {
+    background: #0099CC;
+    color: #FFF;
+    height: 80px;
+    padding-left: 18px;
+    width: auto;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.menu ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    float: left;
+    display: inline;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+.menu a {
+    display: block;
+    line-height: 80px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    
+}
+.menu a.casesousmenu:after {
+    content: "\25BE";
+    margin-left: 5px;
+}
+.menu li a:hover {
+    color: #0099CC;
+    background: #F2F2F2;
+}
+.menu input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/** Styles pour les sous-menus **/
+.menu ul.sousmenu {
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    background: #0099CC;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+.menu ul.sousmenu li {
+    display: block;
+    width: 100%;
+}
+.menu ul.sousmenu a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.menu li:hover ul.sousmenu {
+    display: block;
+}
+
+/** Media query pour les écrans de largeur maximale de 800px **/
+@media screen and (max-width: 800px) {
+    .menu {
+        position: relative;
+        }
+    .menu ul {
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 3;
+        height: auto;
+        display: none;
+        }
+    .menu ul.sousmenu {
+        width: 100%;
+        position: static;
+        }
+    .menu ul.sousmenu a {
+        padding-left: 30px;
+        }
+    .menu li {
+        display: block;
+        float: none;
+        width: auto;
+        }
+    .menu input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: 4;
+        }
+    .menu input:checked ~ ul {
+        display: block;
+        }
+    }

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2? family= Patrick+Hand & display=swap');
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.intro{
+    color: #F2F2F2;
+    padding: 20px;
+}
+img{
+   width: 100%;
+}
+
+
+  /* differentes flexbox */
+  .conteiner{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+.souligne{
+    text-decoration: underline;
+    color: black;
+}
+.souligne2{
+    text-decoration: underline;
+    color: black;
+}
+.souligne3{
+    text-decoration: underline;
+    color: black;
+}
+
+.item1{
+    background-color: white;
+    border: solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 30px;
+
+    
+}
+.item2{
+    background-color: white;
+    border: solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 30px;
+  }
+  p{
+    font-family: 'Patrick Hand', cursive;
+    padding: 20px;
+  }
+  h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Patrick Hand', cursive;
+  }

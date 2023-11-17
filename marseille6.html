@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="stylesheet" href="marseille6.css">
+    <link rel="stylesheet" href="commun.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Kanit:wght@500&family=Marcellus&family=Patrick+Hand&family=Permanent+Marker&family=Play:wght@400;700&family=Shadows+Into+Light&family=Vast+Shadow&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ville de Marseille</title>
+</head>
+<body>
+    <header>
+        <nav class='menu'>
+            <ul>
+              <li><a href='marseille.html'>Accueil</a></li>
+              <li><a href='marseille1.html'>Histoire</a></li>
+              <li class="casesousmenu"><a href=''>Sortir</a>
+                <ul class='sousmenu'>
+                  <li><a href='marseille2.html'>Randonnées</a></li>
+                  <li><a href='marseille3.html'>Plages</a></li>
+                  <li><a href='marseille4.html'>Parcs publics</a></li>
+                </ul>
+              <li><a href="marseille5.html">Musées</a></li>
+              <li><a href='marseille6.html'>Contactez nous</a></li>
+            </ul>
+          </nav>
+    </header>
+
+    <main>
+        <img src="images/ville.jpg" width="100%">
+        <h1 class="titrepage">Contactez-nous</h1>
+        <form class="formulaire">
+            
+            <div class="barre2"></div>
+            <div class="corpsformulaire">
+                <div class="gauche">
+                    <div class="case">
+                        <label>Nom prénom</label>
+                        <input type="text">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="case">
+                        <label>Sexe</label>
+                        <select class="sousmenu">
+                            <option>Homme</option>
+                            <option>Femme</option>
+                        </select>
+                    </div>
+                    <div class="case">
+                            <label>Adresse</label>
+                            <input type="text">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <div class="case">
+                        <label>e-mail</label>
+                        <input type="text">
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class="case">
+                        <label>Téléphone</label>
+                        <input type="text">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+                <div class="droite">
+                    <div class="case">
+                        <label>Message</label>
+                        <textarea placeholder="Saisissez ici..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="boutoncontacter" align="center">
+                <button>Envoyer le message</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>Front Artist : GINOUX Maxence</footer>
+</body>    
+</html>
